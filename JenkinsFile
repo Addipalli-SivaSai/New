@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+         stage('show-content')
+         {
+             steps{
+                 bat 'echo %cd%'
+                 bat 'dir'
+                 bat 'type first.txt'
+             }
+         }
+         
+    
+         }
+         post{
+             success{
+                 echo "All the above stages are successfull"
+             }
+         }
+    
+}
