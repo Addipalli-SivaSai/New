@@ -14,6 +14,9 @@ pipeline {
     
          }
          post{
+            always{
+               emailext body: 'HI', compressLog: true, subject: '', to: 'addipallisivasai@gmail.com'
+             }
              success{
                  echo "All the above stages are successfull"
              }
