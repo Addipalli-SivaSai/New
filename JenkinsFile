@@ -10,7 +10,11 @@ pipeline {
                  bat 'type first.txt'
              }
          }
-         
+         stage("runing python script")
+         {
+           bat "python3 D:\\python_Jen\\add.py"
+           
+         }
     
          }
          post{
