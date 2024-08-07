@@ -14,7 +14,7 @@ pipeline {
          {
         steps 
           {
-           bat "python3 D:\\python_Jen\\add.py"
+           bat "python D:\\python_Jen\\add.py"
            }
          }
     
