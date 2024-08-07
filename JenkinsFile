@@ -21,8 +21,8 @@ pipeline {
          {
         steps 
           {
-              bat '''cd C:\\Users\\40038237\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Git
-                     cd D:\\Shell-Script
+              bat '''cd D:\\Shell-Script
+                    cd C:\\Users\\40038237\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Git
                         dir
                           '''
                sh "ls"
