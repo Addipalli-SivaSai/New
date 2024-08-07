@@ -17,6 +17,18 @@ pipeline {
            bat "python D:\\python_Jen\\add.py"
            }
          }
+ stage("deploy")
+         {
+          when{
+                expression{
+                  currentBuild.result=='SUCCESS'
+              }
+           }
+        steps 
+          {
+             echo "the application is deployed"
+           }
+         }
         
     
          }
