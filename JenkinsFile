@@ -17,14 +17,7 @@ pipeline {
            bat "python D:\\python_Jen\\add.py"
            }
          }
-           stage("runing Bash script")
-         {
-        steps 
-          {
-                 bat '''cd /d D:\\Shell-Script
- script: "C:\\Users\\40038237\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Git\\Git Bash.lnk" -c "ls" '''
-           }
-         }
+        
     
          }
          post{
