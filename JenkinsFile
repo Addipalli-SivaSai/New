@@ -12,8 +12,10 @@ pipeline {
          }
          stage("runing python script")
          {
+        steps 
+          {
            bat "python3 D:\\python_Jen\\add.py"
-           
+           }
          }
     
          }
