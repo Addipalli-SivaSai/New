@@ -21,12 +21,8 @@ pipeline {
          {
         steps 
           {
-                 bat 'cd /d D:\\Shell-Script'
-
-
-
-    
-    bat script: '"C:\\Users\\40038237\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Git\\Git Bash.lnk" -c "ls"'
+                 bat '''cd /d D:\\Shell-Script
+ script: "C:\\Users\\40038237\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Git\\Git Bash.lnk" -c "ls" '''
            }
          }
     
