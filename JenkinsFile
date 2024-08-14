@@ -7,7 +7,7 @@ git 'github'
          stage('show-content')
          {
              steps{
-                 bat 'git --version'
+                 bat 'echo $PATH'
                  bat 'echo %cd%'
                  bat 'dir'
                  bat 'type first.txt'
