@@ -1,6 +1,8 @@
 pipeline {
     agent any
-  
+  tools{
+git 'github'
+}
     stages {
          stage('show-content')
          {
