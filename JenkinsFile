@@ -15,7 +15,7 @@ pipeline {
          }
          post{
              success{
-             
+             bat 'git --version'
 echo "All the above stages are successfull"
              }
          }
