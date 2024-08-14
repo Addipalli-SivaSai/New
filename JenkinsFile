@@ -15,7 +15,9 @@ pipeline {
          }
          post{
              success{
-                 echo "All the above stages are successfull"
+               bat'git checkout -b main'
+               bat 'git merge sai_new'
+echo "All the above stages are successfull"
              }
          }
     
