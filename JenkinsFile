@@ -1,8 +1,6 @@
 pipeline {
     agent any
-    tools{
-         git 'Default'
-    }
+  
     stages {
          stage('show-content')
          {
@@ -17,8 +15,7 @@ pipeline {
          }
          post{
              success{
-               bat'git checkout -b main'
-               bat 'git merge sai_new'
+             
 echo "All the above stages are successfull"
              }
          }
