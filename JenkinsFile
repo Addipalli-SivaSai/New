@@ -7,6 +7,7 @@ git 'github'
          stage('show-content')
          {
              steps{
+                 bat 'git --version'
                  bat 'echo %cd%'
                  bat 'dir'
                  bat 'type first.txt'
@@ -17,7 +18,7 @@ git 'github'
          }
          post{
              success{
-             bat 'git --version'
+             
 echo "All the above stages are successfull"
              }
          }
